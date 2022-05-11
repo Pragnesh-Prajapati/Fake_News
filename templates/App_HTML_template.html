@@ -1,0 +1,29 @@
+<html>
+    <title>
+        Hackathon
+    </title>
+
+    <head>        
+        
+        <br><br>
+        <img src="C:\Users\Pragnesh.Prajapati\Downloads\Fake_news_Updated\Fake_news\templates\logo.jpg", px", height="200px">
+        
+    </head>
+
+    <body>        
+            <br>
+            <br>
+            <br>
+        <form action="{{ url_for('predict')}}"method="post">
+            <input type="text" name="news" placeholder="Enter the news url" required="required" />
+            <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+        
+        </form>
+
+
+        <br>
+        <br>
+        {{ prediction_text }}
+    
+    </body>
+</html>
